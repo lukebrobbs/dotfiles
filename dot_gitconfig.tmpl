@@ -1,6 +1,6 @@
 [user]
 	email = "{{ .email }}"
-	name = Luke Brobbin
+	name = "{{ .gitUser }}"
 [alias]
 	ac = !git add -A && git commit -m
 	acp = !git add -A && git commit -m "$1" && git push && :

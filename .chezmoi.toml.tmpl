@@ -1,3 +1,5 @@
 {{- $email := promptString "email" -}}
+{{- $gitUser := promptString "Git user name" -}}
 [data]
     email = "{{ $email }}"
+    gitUser = "{{ $gitUser }}"
