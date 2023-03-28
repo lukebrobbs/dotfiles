@@ -1,6 +1,3 @@
-[user]
-	email = "{{ .email }}"
-	name = "{{ .gitUser }}"
 [alias]
 	ac = !git add -A && git commit -m
 	acp = !git add -A && git commit -m "$1" && git push && :
@@ -15,3 +12,8 @@
 	defaultBranch = main
 [sequence]
     editor = code --wait
+[includeIf "hasconfig:remote.*.url:git@github.com*/**"]
+    path = .gitconfig-public
+
+[includeIf "hasconfig:remote.*.url:git@bitbucket.org*/**"]
+    path = .gitconfig-work%   
