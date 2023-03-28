@@ -18,3 +18,11 @@ mv dot_laptop.local .laptop.local
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+
+## On the new machine
+
+Once all your machines are set up, keeping the dotfiles in sync between them is very easy. If you make any changes to the dotfiles on one machine, you push them to GitHub, and then all you have to do on the other machines is:
+
+```bash
+chezmoi update
+```
