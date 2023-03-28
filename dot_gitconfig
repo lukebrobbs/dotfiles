@@ -16,4 +16,5 @@
     path = .gitconfig-public
 
 [includeIf "hasconfig:remote.*.url:git@bitbucket.org*/**"]
-    path = .gitconfig-work%   
+    path = .gitconfig-work 
+	
