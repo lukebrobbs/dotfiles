@@ -2,6 +2,12 @@
 
 These are my config files used on my development machines. 
 
+Before setting up the dotfiles, ensure homebrew is downloaded:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 I am utilizing [chezmoi](https://www.chezmoi.io). To get started, you will need to download the `dotlaptop.local` file:
 
 ```bash
